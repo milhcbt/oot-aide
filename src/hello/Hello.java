@@ -1,9 +1,13 @@
 package hello;
+/**
+ini contoh java doc
+*/
 public class Hello
 {
-	public String message = "hello world from java";
-	
+	public static String message = "hello world from java";
+	/* contoh komentar multi-baris
+	*/
 	public static void main(String [] args){ 
-		System.out.println("testp");
+		System.out.println("test: "+message);//komentar satu baris
 	}
 }
