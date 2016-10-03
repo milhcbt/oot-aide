@@ -1,4 +1,4 @@
-package kelas;
+package com.codencare.learning.kelas;
 
 public class ClassMemberDemo
 {
