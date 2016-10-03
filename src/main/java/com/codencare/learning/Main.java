@@ -1,7 +1,6 @@
 package com.codencare.learning;
 
-import java.util.*; 
-import hello.*;
+import com.codencare.learning.hello.*;
 
 public class Main
 {
