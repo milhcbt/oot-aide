@@ -9,7 +9,7 @@ package com.codencare.learning.controlflow;
  *
  * @author iman
  */
-public class PilhanDemo {
+public class ChoicesDemo {
 
     public static void main(String[] args) {
         boolean benar = true, salah = false;
