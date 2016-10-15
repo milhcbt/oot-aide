@@ -20,9 +20,12 @@ public class TextMenu
 		int jawaban = 0;
 		while (jawaban != 'x'){
 			jawaban = printMenu();
-			switch jawaban
-			case '1': System.out.println("ayam goreng");end;
-			case '2':
+			switch (jawaban){
+				case '1': System.out.println("selamat makan ayam");break;
+				case '2': System.out.println("selamat makan sate");break;
+				case '3': System.out.println("selamat makan steak");break;
+				
+			}
 		}
 	}
 }
