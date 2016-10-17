@@ -1,6 +1,6 @@
 package com.codencare.learning.kelas;
 
-public class Field {
+public class JavaBeanDemo {
 	int i1;
 	private int i2;
 	private int i3 = 0;
@@ -15,7 +15,7 @@ public class Field {
 		hanya bisa diakses/digunakan object
 		object= class di inisialisasi pakai new
 		*/
-		Field f = new Field();
+		JavaBeanDemo f = new JavaBeanDemo();
 		System.out.println("i2:"+f.i2);	
 		System.out.println("i3:"+f.i3);
 	}

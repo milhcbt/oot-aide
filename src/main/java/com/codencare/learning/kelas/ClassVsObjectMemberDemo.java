@@ -1,6 +1,6 @@
 package com.codencare.learning.kelas;
 
-public class ClassVsObjectMember
+public class ClassVsObjectMemberDemo
 {
 	public static void main(String[]args){
 		ClassObjectMember.showJ();

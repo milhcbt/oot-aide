@@ -1,6 +1,6 @@
 package com.codencare.learning.kelas;
 
-public class Constructor
+public class ConstructorDemo
 { 
     public static void main(String[]args){
 		AClass c = new AClass();

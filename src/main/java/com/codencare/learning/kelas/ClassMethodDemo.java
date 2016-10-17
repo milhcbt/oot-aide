@@ -2,7 +2,7 @@ package com.codencare.learning.kelas;
 /**
 kelas ini mendemokan method
 */
-public class ClassMethod
+public class ClassMethodDemo
 {
 	public static void main(String[] args){
 		Math m = new Math();
