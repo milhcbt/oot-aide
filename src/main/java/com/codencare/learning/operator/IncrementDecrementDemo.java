@@ -10,5 +10,13 @@ package com.codencare.learning.operator;
  * @author iman
  */
 public class IncrementDecrementDemo {
-    
+
+    public static void main(String[] args) {
+        int Z = 10;
+        System.out.println("Z++ = " + Z++);
+        System.out.println("++Z = " + ++Z);
+        System.out.println("--Z = " + --Z);
+        System.out.println("Z-- = " + Z--);
+        System.out.println("Z = " + Z);
+    }
 }
