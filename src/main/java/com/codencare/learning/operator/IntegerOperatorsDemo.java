@@ -26,6 +26,7 @@ public class IntegerOperatorsDemo {
         System.out.println("6 / 2 = " + (Z / X));
         System.out.println("6 % 2 = " + (Z % X));
         System.out.println("5 x 2 = " + (Y * X));
+        
         System.out.println("Z +=5 ==> Z = " + (Z += 2));
         System.out.println("Z -=5 ==> Z = " + (Z -= 2));
         System.out.println("Z *=5 ==> Z = " + (Z *= 2));
