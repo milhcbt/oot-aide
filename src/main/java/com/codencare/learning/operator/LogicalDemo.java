@@ -10,5 +10,11 @@ package com.codencare.learning.operator;
  * @author iman
  */
 public class LogicalDemo {
-    
+
+    public static void main(String[] args) {
+        boolean x;
+        x = (true && false); // false // logical and
+        x = (true || false); // true // logical or
+        x = !(true); // false // logical not
+    }
 }
