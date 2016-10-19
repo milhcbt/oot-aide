@@ -9,14 +9,8 @@ package com.codencare.learning.kelas;
  *
  * @author iman
  */
-public class CompositionDemo {
-    
-}
-
-class Pesawat {
-    Navigasi navigasi;    
-}
-
-class Navigasi{
-    
+public interface Kendaraan {
+    String test = "status";
+    void jalan(String tujuan);
+    void parkir(String lokasi);
 }
