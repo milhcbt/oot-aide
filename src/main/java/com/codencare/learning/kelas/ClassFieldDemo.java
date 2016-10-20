@@ -4,7 +4,9 @@ public class ClassFieldDemo
 {
 	public static void main(String[] args){ 
 		ClassMember cm = new ClassMember();
-		cm.showI();
+		System.out.println(cm.i);
+                cm.i = 5;
+                System.out.println(cm.i);
 	}
 }
 
@@ -13,8 +15,5 @@ class ClassMember{
 
 	ClassMember(){ 
 		System.out.println("di kontruktor..");
-	}
-	void showI(){
-		System.out.println(i);
 	}
 }
