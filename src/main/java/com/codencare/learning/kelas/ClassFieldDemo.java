@@ -4,7 +4,9 @@ public class ClassFieldDemo
 {
 	public static void main(String[] args){ 
 		ClassMember cm = new ClassMember();
-		Syatem cm.i();
+		System.out.println(cm.i);
+        cm.i = 5;
+        System.out.println(cm.i);
 	}
 }
 
