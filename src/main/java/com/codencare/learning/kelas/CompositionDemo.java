@@ -10,13 +10,19 @@ package com.codencare.learning.kelas;
  * @author iman
  */
 public class CompositionDemo {
-    
+    public static void main(String[] args) {
+        Pesawat pesawat = new Pesawat(new Navigasi());      
+    }
 }
 
 class Pesawat {
     Navigasi navigasi;    
+
+    public Pesawat(Navigasi navigasi) {
+        this.navigasi = navigasi;
+    }
+    
 }
 
-class Navigasi{
-    
+class Navigasi{   
 }
