@@ -29,9 +29,8 @@ public class ChoicesDemo {
         
         int x = 5, y = 6;
         String terbilang;
-        if(x == 0){
-            terbilang = "Nol";
-        }else if (x == 1) terbilang = "Satu";
+        if(x == 0) terbilang = "Nol";
+        else if (x == 1) terbilang = "Satu";
         else if (x == 2) terbilang = "Dua";
         else if (x == 3) terbilang = "Tiga";
         else if (x == 4) terbilang = "Empat";
@@ -39,7 +38,7 @@ public class ChoicesDemo {
         else if (x == 6) terbilang = "Enam";
         else if (x == 7) terbilang = "Tujuh";
         else if (x == 8) terbilang = "Delapan";
-        else if (x == 9) terbilang = "Satu";
+        else if (x == 9) terbilang = "Sembilan";
         else terbilang = "tak dikenal";
         
         System.out.println("terbilang = "+terbilang);
