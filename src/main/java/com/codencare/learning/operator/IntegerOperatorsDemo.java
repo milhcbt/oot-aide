@@ -15,7 +15,8 @@ public class IntegerOperatorsDemo {
         int X = 2, Y = 5, Z = 6;
         int min = Integer.MIN_VALUE, max = Integer.MAX_VALUE;
 
-        System.out.println("X + Y = " + (X + Y));
+        System.out.println("X + Y = " + X + Y);//Penyambungan String 25
+        System.out.println("X + Y = " + (X + Y));//Penambahan 7
         System.out.println("max = " + max);
         System.out.println("max + 1 = " + (max + 1));
         System.out.println("min = " + min);
