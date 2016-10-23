@@ -65,7 +65,6 @@ class TidakRataException extends Exception {
     }
 }
 class TidakAdilException extends RuntimeException {
-
     public TidakAdilException(int total,int pembagi) {
          super(total+ " tidak habis dibagi "+pembagi);
     }
