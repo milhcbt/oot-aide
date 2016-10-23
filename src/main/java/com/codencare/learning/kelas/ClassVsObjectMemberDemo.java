@@ -14,7 +14,6 @@ public class ClassVsObjectMemberDemo
 		com.showJ();
 	}
 } 
-
 class ClassObjectMember{
 	int i=2;
 	static int j=4;
