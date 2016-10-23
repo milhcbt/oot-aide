@@ -22,21 +22,21 @@ public class LabeledBlockDemo {
             System.out.println("  i = " + i);
         }
         System.out.println("continue @ 5 ");
-        System.out.println("break init @ 5 ");
+        System.out.println("break aloop @ 5 ");
         init:
         {
             i = 0;
             aloop:
             for (; i < 10; i++) {
                 for (char j = 'a'; j < 'c'; j++) {
-                    if (i == 5) {
-                        break init;
-                    }
-                    System.out.println("  i = " + i + " j = " + j);
+                    if (i == 5)  break aloop;
+                    System.out.print(" j = " + j);
                 }
+                System.out.println("  i = " + i );
             }
+            System.out.println("after aloop");
         }
-        System.out.println("break init @ 5 ");
+        System.out.println("break aloop @ 5 ");
         System.out.println("continue aloop @ 5 ");
         i = 0;
         init:
