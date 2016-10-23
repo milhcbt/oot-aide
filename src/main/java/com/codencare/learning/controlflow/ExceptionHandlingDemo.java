@@ -5,9 +5,9 @@
  */
 package com.codencare.learning.controlflow;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.io.InputStreamReader;
 
 /**
  *
@@ -17,8 +17,10 @@ public class ExceptionHandlingDemo {
 
     public static int getInput() {
         int retVal = -1;
+        System.out.println("Insert Number:");
         try {
-            retVal = System.in.read();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            retVal = Integer.parseInt(reader.readLine());
         } catch (IOException ex) {
             ex.printStackTrace();
         }
@@ -27,20 +29,30 @@ public class ExceptionHandlingDemo {
 
     public static int bagiRata(int total, int pembagi) throws TidakRataException {
         if (total % pembagi != 0) {
-            throw new TidakRataException();
+            throw new TidakRataException(total,pembagi);
+        }
+        return total / pembagi;
+    }
+    
+    public static int bagiAdil(int total, int pembagi) throws TidakAdilException {
+        if (total % pembagi != 0) {
+            throw new TidakAdilException(total,pembagi);
         }
         return total / pembagi;
     }
 
     public static void main(String[] args) {
-        System.out.println(getInput());
-
+        int total = getInput(), pembagi = getInput();
         try {
-            bagiRata(9, 2);
+            int hasil = bagiRata(total, pembagi);
+            System.out.println("masing-masing dapat: "+ hasil);
         } catch (TidakRataException ex) {
             ex.printStackTrace();
         }
-
+        total = getInput();
+        pembagi = getInput();
+        int hasil = bagiAdil(total, pembagi);
+        System.out.println("masing-masing dapat: "+ hasil);
         System.out.println(" 1/0 = " + 1 / 0);
 
     }
@@ -48,8 +60,13 @@ public class ExceptionHandlingDemo {
 }
 
 class TidakRataException extends Exception {
+    public TidakRataException(int total,int pembagi) {
+        super(total+ " tidak habis dibagi "+pembagi);
+    }
+}
+class TidakAdilException extends RuntimeException {
 
-    public TidakRataException() {
-        super("Total tidak habis dibagi pembagi");
+    public TidakAdilException(int total,int pembagi) {
+         super(total+ " tidak habis dibagi "+pembagi);
     }
 }
