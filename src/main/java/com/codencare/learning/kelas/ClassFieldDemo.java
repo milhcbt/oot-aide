@@ -1,7 +1,6 @@
 package com.codencare.learning.kelas;
 
 public class ClassFieldDemo {
-
     public static void main(String[] args) {
         ClassMember cm = new ClassMember();
         System.out.println(cm.i);

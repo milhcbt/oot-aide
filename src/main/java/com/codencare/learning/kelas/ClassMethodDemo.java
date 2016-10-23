@@ -10,7 +10,6 @@ public class ClassMethodDemo
 		System.out.println(m.sum(1,2,3,4));
 	}
 }
-
 class Math{
 	int sum(int x, int y){
 		return x + y;
