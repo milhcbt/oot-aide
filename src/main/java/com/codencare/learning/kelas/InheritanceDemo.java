@@ -20,18 +20,15 @@ public class InheritanceDemo {
 
 
 abstract class Mobil implements Kendaraan{
-    
     Mobil(){
         System.out.println("Mobil Contructor");
     }
-
     public void parkir(String tempat){
         System.out.println(this.getClass().getSimpleName()+" kendaraan telah diparkir di "+ tempat);
     }
 }
 
 class Truk extends Mobil{
-
     Truk(){
         System.out.println("Truk Constructor");
     }
@@ -39,5 +36,4 @@ class Truk extends Mobil{
     public void jalan(String tujuan) {
         System.out.println( this.getClass().getSimpleName()+" jalan menuju "+ tujuan);
     }
-    
 }

@@ -9,6 +9,6 @@ package com.codencare.learning.generic;
  *
  * @author iman
  */
-public class GenericInterfaceDemo {
-    
+public interface RuangBangun <T extends Number> {
+    T getKeliling();
 }
