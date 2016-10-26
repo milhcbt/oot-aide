@@ -10,7 +10,7 @@ public class PrimitiveTypeDemo
                 byte bilanganBulat8BitNegatif = -8;                
 		short bilanganBulatPendekPositif = 16;
                 short bilanganBulatPendekNegatif = -16;
-                int bilanganBulatPositif = 32;
+                int bilanganBulatPositif = 32; 
                 int bilanganBulatNegatif = -32;
                 long bilanganBulatPanjangPositif = 2147483648L;
                 long bilanganBulatPanjangNegtif = -2147483649L;
