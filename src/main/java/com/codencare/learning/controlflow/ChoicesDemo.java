@@ -35,7 +35,7 @@ public class ChoicesDemo {
         else if (x == 9) terbilang = "Sembilan";
         else terbilang = "tak dikenal";
 
-        //int x = 5, y = 6;
+        ////int x = 5, y = 6;
         String terbilang;
         if(x == 0) terbilang = "Nol";
         else if (x == 1) terbilang = "Satu";else if (x == 2) terbilang = "Dua";
