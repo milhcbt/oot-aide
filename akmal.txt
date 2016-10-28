@@ -1,6 +1,23 @@
+<<<<<<< HEAD
 
 ini punya akmal
 ini baris kedua
 ini baris ketiga !
 
 TESTING tambah sama iman
+=======
+
+ini punya akmal
+ini baris kedua
+ini baris ketiga !
+Baris ke empat 
+
+TESTING
+
+
+
+PERUBAHAN DARI JESA
+
+testing
+
+>>>>>>> bfad3f777ee862f0a024387f8f5667d00d2ed703

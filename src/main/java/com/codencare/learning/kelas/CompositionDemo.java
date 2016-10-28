@@ -26,5 +26,3 @@ class Pesawat {
 
 class Navigasi{   
 }
-
-

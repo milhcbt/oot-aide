@@ -1,4 +1,4 @@
- package com.codencare.learning.controlflow;
+package com.codencare.learning.controlflow;
 
 public class LoopingDemo
 {
