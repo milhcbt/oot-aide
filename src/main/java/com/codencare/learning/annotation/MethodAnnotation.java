@@ -1,5 +1,4 @@
 package main.java.com.codencare.learning.annotation;
 
-public class MethodAnnotation
-{
+public class MethodAnnotation {
 }

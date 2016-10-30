@@ -14,7 +14,9 @@ public class PersonBean implements java.io.Serializable {
 
     private boolean deceased = false;
 
-    /** No-arg constructor (takes no arguments). */
+    /**
+     * No-arg constructor (takes no arguments).
+     */
     public PersonBean() {
     }
 
@@ -27,6 +29,7 @@ public class PersonBean implements java.io.Serializable {
 
     /**
      * Setter for property <code>name</code>.
+     *
      * @param value
      */
     public void setName(final String value) {
@@ -34,8 +37,8 @@ public class PersonBean implements java.io.Serializable {
     }
 
     /**
-     * Getter for property "deceased"
-     * Different syntax for a boolean field (is vs. get)
+     * Getter for property "deceased" Different syntax for a boolean field (is
+     * vs. get)
      */
     public boolean isDeceased() {
         return deceased;
@@ -43,6 +46,7 @@ public class PersonBean implements java.io.Serializable {
 
     /**
      * Setter for property <code>deceased</code>.
+     *
      * @param value
      */
     public void setDeceased(final boolean value) {

@@ -17,7 +17,7 @@ public class BitFieldDemo {
     public static final int DELETE = 1 << 3; // 8
 
     public static void main(String[] args) {
-        final HakAkses hakAkses  = new HakAkses();
+        final HakAkses hakAkses = new HakAkses();
         hakAkses.enableAll(CREATE, READ, UPDATE, DELETE);
         hakAkses.disable(UPDATE);
         hakAkses.toggle(DELETE);

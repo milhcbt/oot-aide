@@ -4,8 +4,8 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 
-public class BasicStringOperationsDemo
-{
+public class BasicStringOperationsDemo {
+
     public static void main(String[] args) {
         String lagu = "Halo-halo Bandung\nIbukota periangan\nHalo-halo Bandung\nKota kenang-kenangan"
                 + "\n\tSudah lama beta\n\tTidak berjumpa dengan kau\n\tSekarang telah menjadi lautan api\n\tMari bung rebut kembali";
@@ -18,9 +18,9 @@ public class BasicStringOperationsDemo
                 + "\nhari jadi\t:  %6$te %6$tB %6$tY"
                 + "\n====================================\n";
         Calendar c = new GregorianCalendar(1810, 9, 25);
-        System.out.printf(kota, "Bandung",2771138 ,92.89,2.79,(((2390120f-2364312f)/2364312f))*100,c);
-        System.out.println("Lagu:\n"+lagu);
-        System.out.println("Panjang Lagu: "+ lagu.length()+"karakter");
-        System.out.println("Berisi Bandung? "+lagu.contains("Bandung"));
+        System.out.printf(kota, "Bandung", 2771138, 92.89, 2.79, (((2390120f - 2364312f) / 2364312f)) * 100, c);
+        System.out.println("Lagu:\n" + lagu);
+        System.out.println("Panjang Lagu: " + lagu.length() + "karakter");
+        System.out.println("Berisi Bandung? " + lagu.contains("Bandung"));
     }
 }

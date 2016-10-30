@@ -4,13 +4,11 @@ import java.net.Socket;
 import java.io.*;
 
 /**
- * Created by IntelliJ IDEA.
- * User: Iman
- * Date: Feb 16, 2006
- * Time: 9:32:56 PM
- * To change this template use File | Settings | File Templates.
+ * Created by IntelliJ IDEA. User: Iman Date: Feb 16, 2006 Time: 9:32:56 PM To
+ * change this template use File | Settings | File Templates.
  */
 public class Connection extends Thread {
+
     private Socket client;
     private BufferedReader request;
     private DataOutputStream response;
@@ -22,11 +20,11 @@ public class Connection extends Thread {
             response = new DataOutputStream(client.getOutputStream());
             System.out.println("mulai menerima stream dari client");
         } catch (IOException e) {
-            System.err.println("Stream dari client gak bisa dibaca karena"+ e.getMessage());
+            System.err.println("Stream dari client gak bisa dibaca karena" + e.getMessage());
             try {
                 client.close();
             } catch (IOException ex) {
-                System.err.println("Gagal menutup koneksi client karena: "+ex.getMessage());
+                System.err.println("Gagal menutup koneksi client karena: " + ex.getMessage());
             }
         }
         this.start();
@@ -41,17 +39,16 @@ public class Connection extends Thread {
             String strRequest;
             int size = 0;
             while ((strRequest = request.readLine()).length() > 0) {
-                response.writeBytes(strRequest+"<br>");
-                if(strRequest.contains("Content-Length")){
+                response.writeBytes(strRequest + "<br>");
+                if (strRequest.contains("Content-Length")) {
                     int index = strRequest.indexOf(':');
-                    String s = strRequest.substring(index+1).trim();
+                    String s = strRequest.substring(index + 1).trim();
                     size = Integer.parseInt(s);
                 }
             }
             response.writeBytes("<h2>Body</h2>");
             int c;
-            for (int i = 0; i<size;i++)
-            {
+            for (int i = 0; i < size; i++) {
                 c = request.read();
                 response.writeChar(c);
             }

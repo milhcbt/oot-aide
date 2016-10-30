@@ -10,5 +10,5 @@ package com.codencare.learning.kelas;
  * @author jesa
  */
 public class Manusia {
-    
+
 }

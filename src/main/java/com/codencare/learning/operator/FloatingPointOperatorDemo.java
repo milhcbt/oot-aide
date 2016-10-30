@@ -10,7 +10,8 @@ package com.codencare.learning.operator;
  * @author iman
  */
 public class FloatingPointOperatorDemo {
-    public static void main (String [] args){
+
+    public static void main(String[] args) {
         double X = 2.0, Y = 5.0, Z = 6.0;
         double min = Double.MIN_VALUE, max = Double.MAX_VALUE;
         System.out.println("X + Y = " + X + Y); // Penyambungan String 2.05.0

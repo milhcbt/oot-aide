@@ -109,6 +109,6 @@ class GrandChild extends Child {
 
     @Override
     public String toString() {
-        return "GrandChild{"+super.toString() + "j=" + j + '}';
+        return "GrandChild{" + super.toString() + "j=" + j + '}';
     }
 }

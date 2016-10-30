@@ -20,7 +20,7 @@ public class BitwiseDemo {
         System.out.println("5 << 4 = " + (4 << 1));// 100 << 1 =1000 (8) // left shift
         System.out.println("5 >> 4 = " + (4 >> 1));// 100 >> 1 = 10 (2) // right shift
         System.out.println("5 >>> 4 = " + (4 >>> 1));// 100 >>>1 = 10 (2) // zero-fill
-                                         // right shift
+        // right shift
         System.out.println("~ 4 = " + ~4); // ~00000100 = 11111011 (-5) // invert
 
         System.out.println("Z &= 5 ==>" + (Z &= 5)); // "and" and assign

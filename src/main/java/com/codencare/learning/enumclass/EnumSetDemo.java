@@ -12,6 +12,7 @@ import java.util.EnumSet;
  * @author iman
  */
 public class EnumSetDemo {
+
     public enum HakAkses {
         CREATE, READ, UPDATE, DELETE
     }

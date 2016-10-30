@@ -29,10 +29,12 @@ public class LabeledBlockDemo {
             aloop:
             for (; i < 10; i++) {
                 for (char j = 'a'; j < 'c'; j++) {
-                    if (i == 5)  break aloop;
+                    if (i == 5) {
+                        break aloop;
+                    }
                     System.out.print(" j = " + j);
                 }
-                System.out.println("  i = " + i );
+                System.out.println("  i = " + i);
             }
             System.out.println("after aloop");
         }

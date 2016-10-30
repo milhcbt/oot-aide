@@ -10,5 +10,5 @@ package com.codencare.learning.gofpattern;
  * @author iman
  */
 public class BuilderDemo {
-    
+
 }

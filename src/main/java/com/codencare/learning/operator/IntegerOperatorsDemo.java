@@ -27,7 +27,7 @@ public class IntegerOperatorsDemo {
         System.out.println("6 / 2 = " + (Z / X));
         System.out.println("6 % 2 = " + (Z % X));
         System.out.println("5 x 2 = " + (Y * X));
-        
+
         System.out.println("Z +=5 ==> Z = " + (Z += 2));
         System.out.println("Z -=5 ==> Z = " + (Z -= 2));
         System.out.println("Z *=5 ==> Z = " + (Z *= 2));
@@ -35,8 +35,8 @@ public class IntegerOperatorsDemo {
         System.out.println("Z %=2 ==> Z = " + (Z %= 2));
 
         System.out.println("");
-        
-        long l = 2147483647+ 1;
+
+        long l = 2147483647 + 1;
         System.out.println(l);
     }
 }

@@ -13,9 +13,9 @@ public class ComparationDemo {
 
     public static void main(String[] args) {
         boolean x;
-        x = (2 == 5/2); // false // equal to
+        x = (2 == 5 / 2); // false // equal to
         System.out.println("(2 == 5/2) = " + x);
-        x = (2 == 5.0/2); // false // equal to
+        x = (2 == 5.0 / 2); // false // equal to
         System.out.println("(2 == 5.0/2) = " + x);
         x = (2 != 3); // true // not equal to
         System.out.println("(2 != 3) = " + x);

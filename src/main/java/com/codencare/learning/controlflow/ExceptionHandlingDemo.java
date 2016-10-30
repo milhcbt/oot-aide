@@ -29,14 +29,14 @@ public class ExceptionHandlingDemo {
 
     public static int bagiRata(int total, int pembagi) throws TidakRataException {
         if (total % pembagi != 0) {
-            throw new TidakRataException(total,pembagi);
+            throw new TidakRataException(total, pembagi);
         }
         return total / pembagi;
     }
-    
+
     public static int bagiAdil(int total, int pembagi) throws TidakAdilException {
         if (total % pembagi != 0) {
-            throw new TidakAdilException(total,pembagi);
+            throw new TidakAdilException(total, pembagi);
         }
         return total / pembagi;
     }
@@ -45,14 +45,14 @@ public class ExceptionHandlingDemo {
         int total = getInput(), pembagi = getInput();
         try {
             int hasil = bagiRata(total, pembagi);
-            System.out.println("masing-masing dapat: "+ hasil);
+            System.out.println("masing-masing dapat: " + hasil);
         } catch (TidakRataException ex) {
             ex.printStackTrace();
         }
         total = getInput();
         pembagi = getInput();
         int hasil = bagiAdil(total, pembagi);
-        System.out.println("masing-masing dapat: "+ hasil);
+        System.out.println("masing-masing dapat: " + hasil);
         System.out.println(" 1/0 = " + 1 / 0);
 
     }
@@ -60,12 +60,15 @@ public class ExceptionHandlingDemo {
 }
 
 class TidakRataException extends Exception {
-    public TidakRataException(int total,int pembagi) {
-        super(total+ " tidak habis dibagi "+pembagi);
+
+    public TidakRataException(int total, int pembagi) {
+        super(total + " tidak habis dibagi " + pembagi);
     }
 }
+
 class TidakAdilException extends RuntimeException {
-    public TidakAdilException(int total,int pembagi) {
-         super(total+ " tidak habis dibagi "+pembagi);
+
+    public TidakAdilException(int total, int pembagi) {
+        super(total + " tidak habis dibagi " + pembagi);
     }
 }

@@ -10,5 +10,5 @@ package com.codencare.learning.persistance;
  * @author iman
  */
 public class QueryJpaDemo {
-    
+
 }

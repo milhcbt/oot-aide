@@ -5,49 +5,42 @@ import java.net.*;
 import java.util.*;
 
 /**
-    This program implements a simple server that listens to port 8189 and echoes back all
-    client input.
+ * This program implements a simple server that listens to port 8189 and echoes
+ * back all client input.
  */
-public class EchoServer
-{
-    public static void main(String[] args )
-    {
-        try
-       {
-         // establish server socket
-          ServerSocket s = new ServerSocket(8189);
+public class EchoServer {
 
-          // wait for client connection
-          Socket incoming = s.accept( );
-          try
-         {
-             InputStream inStream = incoming.getInputStream();
-             OutputStream outStream = incoming.getOutputStream();
+    public static void main(String[] args) {
+        try {
+            // establish server socket
+            ServerSocket s = new ServerSocket(8189);
 
-             Scanner in = new Scanner(inStream);
-             PrintWriter out = new PrintWriter(outStream, true /* autoFlush */);
-			 
-             out.println( "Hello! Enter BYE to exit." );
+            // wait for client connection
+            Socket incoming = s.accept();
+            try {
+                InputStream inStream = incoming.getInputStream();
+                OutputStream outStream = incoming.getOutputStream();
 
-             // echo client input
-             boolean done = false;
-             while (!done && in.hasNextLine())
-             {
-                String line = in.nextLine();
-				System.out.println("Accepted:"+line);
-                out.println("Echo: " + line);
-                if (line.trim().equals("BYE"))
-                   done = true;
-             }
-          }
-          finally
-         {
-             incoming.close();
-          }
-       }
-       catch (IOException e)
-       {
-          e.printStackTrace();
-       }
+                Scanner in = new Scanner(inStream);
+                PrintWriter out = new PrintWriter(outStream, true /* autoFlush */);
+
+                out.println("Hello! Enter BYE to exit.");
+
+                // echo client input
+                boolean done = false;
+                while (!done && in.hasNextLine()) {
+                    String line = in.nextLine();
+                    System.out.println("Accepted:" + line);
+                    out.println("Echo: " + line);
+                    if (line.trim().equals("BYE")) {
+                        done = true;
+                    }
+                }
+            } finally {
+                incoming.close();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
- }
+}

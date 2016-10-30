@@ -1,5 +1,4 @@
 package main.java.com.codencare.learning.environment;
 
-public class PropertiesFileDemo
-{
+public class PropertiesFileDemo {
 }

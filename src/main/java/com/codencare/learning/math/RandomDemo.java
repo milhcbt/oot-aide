@@ -17,8 +17,8 @@ public class RandomDemo {
         Random r1 = new Random(27);
         Random r2 = new Random(27);
         for (int i = 0; i < 10; i++) {
-            System.out.print("r1= "+r1.nextInt()+", r2 = "+r2.nextInt()+" \n");
+            System.out.print("r1= " + r1.nextInt() + ", r2 = " + r2.nextInt() + " \n");
         }
-        System.out.println("r1.equals(r2) ==> "+r1.equals(r2));
+        System.out.println("r1.equals(r2) ==> " + r1.equals(r2));
     }
 }

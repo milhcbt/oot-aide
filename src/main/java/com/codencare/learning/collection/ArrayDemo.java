@@ -7,15 +7,15 @@ public class ArrayDemo {
     public static void main(String[] args) {
         int[] ai1;
         int[][][] ai2;
-        
+
         ai1 = new int[2];
-        System.out.println("ai1.length:"+ai1.length);
+        System.out.println("ai1.length:" + ai1.length);
         ai1[0] = 1;
         ai1[1] = 2;
         //ai1[2] = 3; //ArrayIndexOutOfBoundsException
 
         ai2 = new int[2][3][4];
-        System.out.println("ai2.length:"+ai2.length);
+        System.out.println("ai2.length:" + ai2.length);
         ai2[0][0][0] = 1;
         ai2[0][0][1] = 2;
         ai2[0][0][2] = 3;
@@ -64,6 +64,6 @@ public class ArrayDemo {
             System.out.print("}\n");
         }
 
-       System.out.println(Arrays.binarySearch(ai1, 0, 2, 3));
+        System.out.println(Arrays.binarySearch(ai1, 0, 2, 3));
     }
 }

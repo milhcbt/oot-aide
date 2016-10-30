@@ -9,6 +9,7 @@ package com.codencare.learning.generic;
  *
  * @author iman
  */
-public interface RuangBangun <T extends Number> {
+public interface RuangBangun<T extends Number> {
+
     T getKeliling();
 }

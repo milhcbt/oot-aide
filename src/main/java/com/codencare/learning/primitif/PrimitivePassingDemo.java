@@ -37,7 +37,7 @@ public class PrimitivePassingDemo {
     }
 
     public static void foo(MyInt x) {
-        x.i +=1;
+        x.i += 1;
     }
 
     public static void foo(String s) {
@@ -49,9 +49,11 @@ public class PrimitivePassingDemo {
     }
 }
 
-class MyInt{
+class MyInt {
+
     int i;
-    MyInt(int i){
+
+    MyInt(int i) {
         this.i = i;
     }
 }

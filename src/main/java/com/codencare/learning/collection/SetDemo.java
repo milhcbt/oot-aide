@@ -1,5 +1,4 @@
 package main.java.com.codencare.learning.collection;
 
-public class SetDemo
-{
+public class SetDemo {
 }

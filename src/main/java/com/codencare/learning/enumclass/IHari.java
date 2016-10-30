@@ -10,11 +10,12 @@ package com.codencare.learning.enumclass;
  * @author iman
  */
 public interface IHari {
+
     int MINGGU = 0,
-        SENIN = 1,
-        SELASA = 2,
-        RABU = 3,
-        KAMIS = 4,
-        JUMAT = 5,
-        SABTU = 6;
+            SENIN = 1,
+            SELASA = 2,
+            RABU = 3,
+            KAMIS = 4,
+            JUMAT = 5,
+            SABTU = 6;
 }
