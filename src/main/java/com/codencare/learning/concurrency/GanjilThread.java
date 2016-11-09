@@ -25,9 +25,9 @@ public class GanjilThread extends Thread {
 
     public void run() {
         while (start<end) {
+            KelasLama.prosesYangLama();
             System.out.println(start);
             start += 2;
-            KelasLama.prosesYangLama();
         }
     }
 }

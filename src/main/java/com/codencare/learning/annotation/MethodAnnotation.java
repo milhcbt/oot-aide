@@ -1,4 +1,4 @@
-package main.java.com.codencare.learning.annotation;
+package com.codencare.learning.annotation;
 
 public class MethodAnnotation {
 }

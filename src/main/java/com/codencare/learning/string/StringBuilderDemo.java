@@ -15,6 +15,8 @@ public class StringBuilderDemo {
         String[] as = "the quick brown fox jumps over the lazy dog".split(" ");
         long start = System.nanoTime();
         String hasilSalah = gabungSalah(as);
+        String ss = gabungSalah("aku","cinta","indonesia");
+        
         long duration = System.nanoTime() - start;
         System.out.printf("hasilSalah:%s | %d nano second | usedMem:%d\n",
                 hasilSalah, duration, usedMem());
@@ -37,6 +39,13 @@ public class StringBuilderDemo {
         }
         return retVal;
     }
+//    static String gabungSalah(String[] as) {
+//        String retVal = "";
+//        for (String s : as) {
+//            retVal += s;
+//        }
+//        return retVal;
+//    }
 
     static String gabungAman(String... as) {
         StringBuffer sb = new StringBuffer();

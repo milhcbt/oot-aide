@@ -7,7 +7,7 @@ public class GenericClassDemo {
         GBucket<Float> floatBucket = new GBucket<Float>(5.2F);
         GNumberBucket<Integer> intBucket = new GNumberBucket<>(1, "Hello");
         GNumberBucket<Double> douBucket = new GNumberBucket<>(5.2, "Aloha");
-        //GNumberBucket<String> strNumBucket = new GNumberBucket<>("Yeah","Aloha");// inferred type does not conform to upper bound(s)
+//        GNumberBucket<String> strNumBucket = new GNumberBucket<>("Yeah","Aloha");// inferred type does not conform to upper bound(s)
 
         System.out.println("strBucket field type:" + strBucket.getFieldType());
         System.out.println("floatBucket field type:" + floatBucket.getFieldType());

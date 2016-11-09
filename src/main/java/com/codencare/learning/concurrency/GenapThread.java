@@ -5,16 +5,17 @@
  */
 package com.codencare.learning.concurrency;
 
+import java.io.Serializable;
+
 /**
  *
  * @author iman
  */
-public class GenapThread implements Runnable {
+public class GenapThread extends Object implements Runnable,Serializable {
 
-    int start,end;
-    
+    int start, end;
 
-    public GenapThread(int start,int end) {
+    public GenapThread(int start, int end) {
         if (start % 2 == 0) {
             this.start = start;
         } else {
@@ -25,9 +26,9 @@ public class GenapThread implements Runnable {
 
     public void run() {
         while (start < end) {
+            KelasLama.prosesYangLama();
             System.out.println(start);
             start += 2;
-            KelasLama.prosesYangLama();
         }
     }
 }

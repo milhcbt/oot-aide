@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Oct 31 04:28:20 ICT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0158-177e-41ee-00000e76a238 
+on database directory memory:Z:\codes\reindo\oot-aide\demo with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+Loaded from file:/Z:/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_92-b14
+user.dir=Z:\codes\reindo\oot-aide
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

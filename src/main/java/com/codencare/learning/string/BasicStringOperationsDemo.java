@@ -2,7 +2,6 @@ package com.codencare.learning.string;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import java.util.Locale;
 
 public class BasicStringOperationsDemo {
 
@@ -12,8 +11,8 @@ public class BasicStringOperationsDemo {
         String kota = "===================================="
                 + "\nKota\t\t: %s"
                 + "\npopulasi\t: %d"
-                + "\nislam\t\t: %f%%"
-                + "\nkatolik\t\t: %f%%"
+                + "\nislam\t\t: %.2f%%"
+                + "\nkatolik\t\t: %.2f%%"
                 + "\npertumbuhan\t: %2.4f%%"
                 + "\nhari jadi\t:  %6$te %6$tB %6$tY"
                 + "\n====================================\n";
@@ -22,5 +21,8 @@ public class BasicStringOperationsDemo {
         System.out.println("Lagu:\n" + lagu);
         System.out.println("Panjang Lagu: " + lagu.length() + "karakter");
         System.out.println("Berisi Bandung? " + lagu.contains("Bandung"));
+        String bdg = "Bandung";
+        System.out.println(bdg.equals("bandung"));
+        System.out.println(bdg.equalsIgnoreCase("bandung"));
     }
 }

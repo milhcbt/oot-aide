@@ -11,12 +11,13 @@ package com.codencare.learning.concurrency;
  */
 public class KelasLama {
 
-    static /*synchronized*/ public void prosesYangLama() {
+    static synchronized public void prosesYangLama() {
         try {
             System.out.print("Mulai...");
-            Thread.sleep(100);
+            Thread.sleep(1000);
             System.out.println("...Selesai");
         } catch (InterruptedException ex) {
+            ex.printStackTrace();
         }
     }
 }

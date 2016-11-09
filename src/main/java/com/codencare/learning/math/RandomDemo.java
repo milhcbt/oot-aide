@@ -14,8 +14,8 @@ import java.util.Random;
 public class RandomDemo {
 
     public static void main(String[] args) {
-        Random r1 = new Random(27);
-        Random r2 = new Random(27);
+        Random r1 = new Random();
+        Random r2 = new Random();
         for (int i = 0; i < 10; i++) {
             System.out.print("r1= " + r1.nextInt() + ", r2 = " + r2.nextInt() + " \n");
         }

@@ -3,7 +3,7 @@ package com.codencare.learning.io;
 import java.io.*;
 
 class Mahasiswa implements Serializable {
-
+    static final long serialVersionUID = 42L;
     public String name;//these field public for simplicity  
     public int age;//they are should be covered by accessor&muttator
 
@@ -27,6 +27,6 @@ public class ObjectSerialization {
         out.writeObject(m);
         FileInputStream fileIn = new FileInputStream(m.name + ".dat");
         ObjectInputStream in = new ObjectInputStream(fileIn);
-        System.out.println(m);
+        System.out.println(m.toString());
     }
 }

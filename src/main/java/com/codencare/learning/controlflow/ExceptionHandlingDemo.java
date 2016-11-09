@@ -21,7 +21,9 @@ public class ExceptionHandlingDemo {
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             retVal = Integer.parseInt(reader.readLine());
-        } catch (IOException ex) {
+        } catch (IOException | NumberFormatException ex) {
+            ex.printStackTrace();
+        }catch(Exception ex){
             ex.printStackTrace();
         }
         return retVal;
@@ -34,21 +36,23 @@ public class ExceptionHandlingDemo {
         return total / pembagi;
     }
 
-    public static int bagiAdil(int total, int pembagi) throws TidakAdilException {
+    public static int bagiAdil(int total, int pembagi) throws ArithmeticException {
         if (total % pembagi != 0) {
-            throw new TidakAdilException(total, pembagi);
+            throw new ArithmeticException("gak adil");
         }
         return total / pembagi;
     }
 
     public static void main(String[] args) {
         int total = getInput(), pembagi = getInput();
+        int value = 0;
         try {
-            int hasil = bagiRata(total, pembagi);
-            System.out.println("masing-masing dapat: " + hasil);
+            value = bagiRata(total, pembagi);
         } catch (TidakRataException ex) {
             ex.printStackTrace();
         }
+        System.out.println("masing-masing dapat: " + value);
+
         total = getInput();
         pembagi = getInput();
         int hasil = bagiAdil(total, pembagi);

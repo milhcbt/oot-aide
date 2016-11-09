@@ -15,7 +15,7 @@ import java.util.concurrent.Executors;
 public class TreadManagement {
 
     public static void main(String[] args) {
-        ExecutorService executor = Executors.newFixedThreadPool(5);
+        ExecutorService executor = Executors.newFixedThreadPool(1);
         for (int i = 0; i < 10; i++) {
             Runnable worker;
             if (i%2==0){
